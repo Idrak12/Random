@@ -1,0 +1,19 @@
+import random
+
+def generate_random_code():
+    # Генерируем случайное число от 1 до 10
+    random_number = random.randint(1, 10)
+
+    # Генерируем случайную строку из 5 символов
+    random_string = ''.join(random.choice('abcdefghijklmnopqrstuvwxyz') for _ in range(5))
+
+    # Генерируем список из 5 случайных чисел от 1 до 100
+    random_list = [random.randint(1, 100) for _ in range(5)]
+
+    # Выводим результаты
+    print("Случайное число:", random_number)
+    print("Случайная строка:", random_string)
+    print("Случайный список чисел:", random_list)
+
+# Вызываем функцию для генерации случайного кода
+generate_random_code()
